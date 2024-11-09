@@ -1,0 +1,55 @@
+﻿div {
+    background-color: grey;
+    display: inline-block;
+}
+/* background colour is set to grey
+    and the number of columns is set to 9
+*/
+.grid {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: #c1c1d7;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 10px;
+}
+/* the size of each spot is set to ensure enough space to fit the content*/
+.grid-item {
+    width: 85px;
+    height: 95px;
+    padding: 20px;
+    background-color: #6699ff;
+}
+/*a different colour is picked the the date column on the left */
+.date {
+    width: 85px;
+    height: 95px;
+    padding: 20px;
+    text-align: center;
+    text-align: left;
+    font-size: 20px;
+    background-color: #80ff80;
+}
+.first_row {
+    width: 85px;
+    height: 90px;
+    padding: 20px;
+    background-color: #ff8533;
+    font-size: 22px;
+}
+#city {
+    font: bold;
+    padding: 10px;
+    font-size: 28px;
+}
+#title {
+    font-size: 24px;
+    padding: 10px;
+}
+h3 {
+    font-size: 24px;
+    font: bold;
+}
+#lineChart {
+    width: 1200px;
+} 

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <main>
+        <div id="geo">
+            <h3>Geolocation</h3>
+            <form action="weather.js">
+                <input id="lat" type="number" />
+                <input id="long" type="number" />
+                <input id="get" type="button" value="get weather" />
+            </form>
+        </div>
+        <div id="grid"> 
+            <p id="city"></p>
+            <div class="grid">
+                <!--A div tag for the whole grid-->
+                <div id="first1"></div><!--Div tags for each space in the grid-->
+                <div class="first_row" id="2_firstRow"></div>
+                <div class="first_row" id="3_firstRow"></div>
+                <div class="first_row" id="4_firstRow"></div>
+                <div class="first_row" id="5_firstRow"></div>
+                <div class="first_row" id="6_firstRow"></div>
+                <div class="first_row" id="7_firstRow"></div>
+                <div class="first_row" id="8_firstRow"></div>
+                <div class="first_row" id="9_firstRow"></div>
+                <div class="date" id="date1"></div>
+                <div class="grid-item" id="1">
+                    <img id="img1" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="2">
+                    <img id="img2" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="3">
+                    <img id="img3" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="4">
+                    <img id="img4" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="5">
+                    <img id="img5" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="6">
+                    <img id="img6" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="7">
+                    <img id="img7" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="8">
+                    <img id="img8" src="" alt=""/>
+                </div>
+                <div class="date" id="date2"></div>
+                <div class="grid-item" id="9">
+                    <img id="img9" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="10">
+                    <img id="img10" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="11">
+                    <img id="img11" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="12">
+                    <img id="img12" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="13">
+                    <img id="img13" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="14">
+                    <img id="img14" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="15">
+                    <img id="img15" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="16">
+                    <img id="img16" src="" alt=""/>
+                </div>
+                <div class="date" id="date3"></div>
+                <div class="grid-item" id="17">
+                    <img id="img17" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="18">
+                    <img id="img18" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="19">
+                    <img id="img19" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="20">
+                    <img id="img20" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="21">
+                    <img id="img21" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="22">
+                    <img id="img22" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="23">
+                    <img id="img23" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="24">
+                    <img id="img24" src="" alt=""/>
+                </div>
+                <div class="date" id="date4"></div>
+                <div class="grid-item" id="25">
+                    <img id="img25" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="26">
+                    <img id="img26" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="27">
+                    <img id="img27" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="28">
+                    <img id="img28" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="29">
+                    <img id="img29" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="30">
+                    <img id="img30" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="31">
+                    <img id="img31" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="32">
+                    <img id="img32" src="" alt=""/>
+                </div>
+                <div class="date" id="date5"></div>
+                <div class="grid-item" id="33">
+                    <img id="img33" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="34">
+                    <img id="img34" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="35">
+                    <img id="img35" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="36">
+                    <img id="img36" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="37">
+                    <img id="img37" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="38">
+                    <img id="img38" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="39">
+                    <img id="img39" src="" alt=""/>
+                </div>
+                <div class="grid-item" id="40">
+                    <img id="img40" src="" alt=""/>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div>
+            <div id="title">Line Chart</div>
+            <canvas id="lineChart"></canvas><!--Canvas is used to display the line chart-->
+
+        </div>
+    </main>
+    <footer>
+        <p>Valid <a href="https://validator.w3.org/#validate_by_input">HTML5</a> and 
+        <a href="https://jigsaw.w3.org/css-validator/#validate_by_input">css3</a>.</p>
+    </footer>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="weather.js"></script>
+    <script src="geolocation.js"></script>
+    <link href="weather.css" rel="stylesheet" />
+</body>
+</html>
